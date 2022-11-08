@@ -10,15 +10,15 @@ public class MenuControl : MonoBehaviour {
     
     Button Quit;
     public void PlayGame() {
-      //  SceneManager.LoadScene("GameScene");
-        Quit = GetComponent<Button>();
-        Quit.gameObject.SetActive(false);
+        SceneManager.LoadScene("GameScene");
+        //Quit = GetComponent<Button>();
+        //Quit.gameObject.SetActive(false);
     }
     public void QuitGame() {
-        //Application.Quit();
-        Debug.LogWarning("Game exit");
-        Quit = GetComponent<Button>();
-        Quit.gameObject.SetActive(false);
+        Application.Quit();
+        //Debug.LogWarning("Game exit");
+        //Quit = GetComponent<Button>();
+        //Quit.gameObject.SetActive(false);
 
     }
 }
